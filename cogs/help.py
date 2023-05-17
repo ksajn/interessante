@@ -10,12 +10,14 @@ class help(commands.Cog):
     @commands.command()
     async def help(self, ctx):
         button = Button(label="invite interessant",url="https://discord.com/api/oauth2/authorize?client_id=1104848069712941096&permissions=8&scope=bot", style=discord.ButtonStyle.grey)
+        button2 = Button(label="github",url="https://github.com/ksajn/interessant", style=discord.ButtonStyle.grey)
         view = View()
         view.add_item(button)
+        view.add_item(button2)
 
         embed=discord.Embed(
             title="interessant",
-            description="hi i am interessant, in english my name means interested. i am a simple bot programmed in python. i use the `!` prefix. my commands are:",
+            description="hi i'm interessant, in english my name means interested. i'm a simple bot programmed in python. i use the `!` prefix. my commands are:",
             color=0x2b2d31,
         )
 
